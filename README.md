@@ -27,35 +27,10 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
 
 ---
 
-### **2. Architecture Diagram**
+### **2. Dev and Test Architecture Diagram**
 
 ```
-+-----------------+      +----------------------+      +-----------------------------+
-|   Developer     |----->|     GitHub Repo      |----->|        Jenkins Server       |
-| (pushes code)   |      | (Source Code Mgmt)   |      |  (on AWS EC2)               |
-+-----------------+      +----------------------+      |                             |
-                                                       | 1. Clones Repo              |
-                                                       | 2. Builds Docker Image      |
-                                                       | 3. Runs Docker Compose      |
-                                                       +--------------+--------------+
-                                                                      |
-                                                                      | Deploys
-                                                                      v
-                                                       +-----------------------------+
-                                                       |      Application Server     |
-                                                       |      (Same AWS EC2)         |
-                                                       |                             |
-                                                       | +-------------------------+ |
-                                                       | | Docker Container: Flask | |
-                                                       | +-------------------------+ |
-                                                       |              |              |
-                                                       |              v              |
-                                                       | +-------------------------+ |
-                                                       | | Docker Container: MySQL | |
-                                                       | +-------------------------+ |
-                                                       +-----------------------------+
-```
-
+<img src="diagrams/07.png">
 ---
 
 ### **3. Step 1: AWS EC2 Instance Preparation**
