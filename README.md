@@ -29,7 +29,6 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
 
 ### **2. Dev and Test Architecture Diagram**
 
-```
 <img src="diagrams/07.png">
 ---
 
