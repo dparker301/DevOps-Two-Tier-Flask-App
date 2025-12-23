@@ -55,7 +55,6 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     ```bash
     ssh -i /path/to/key.pem ubuntu@<ec2-public-ip>
     ```
-
 ---
 
 ### **4. Step 2: Install Dependencies on EC2**
