@@ -1,0 +1,30 @@
+    1  git init
+    2  git init
+    3  git init
+    4  git init
+    5  git init
+    6  cd
+    7  pwd
+    8  cd C:\Users\lpark\Desktop\LUIT_Projects\NeverStopLearning\2_tier_pipeline
+    9  cd /Desktop/LUIT_Projects/NeverStopLearning/2_tier_pipeline
+   10  cd \Desktop\LUIT_Projects\NeverStopLearning\2_tier_pipeline
+   11  pwd
+   12  cd Desktop/
+   13  cd LUIT_Projects/
+   14  cd NeverStopLearning/2_tier_pipeline/
+   15  ls
+   16  cd DevOps-Project-Two-Tier-Flask-App/
+   17  owd
+   18  pwd
+   19  git status
+   20  git status --porcelain | grep -Ei "\.(png|jpg|jpeg|gif|webp|svg)$"
+   21  git add .
+   22  git add **/*.png **/*.jpg **/*.jpeg **/*.gif **/*.webp **/*.svg
+   23  git add **/*.png
+   24  git commit -m "Update Images"
+   25  git branch
+   26  git push origin main
+   27  git fetch origin
+   28  git pull --rebase origin main
+   29  git push origin main
+   30  history > commands.txt
